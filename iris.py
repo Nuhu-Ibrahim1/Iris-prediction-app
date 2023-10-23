@@ -4,9 +4,9 @@ import pandas as pd
 from PIL import Image
 import sklearn
 st.title('Iris Prediction App')
-image = Image.open('C:\\Users\\Dr. Ibrahim Nuhu\\Downloads\\pexels-saliha-sevim-7651066.jpg')
+image = Image.open('pexels-saliha-sevim-7651066.jpg')
 st.image(image)
-iris_model = pickle.load( open('C:\\Users\\Dr. Ibrahim Nuhu\\OneDrive\\Desktop\\segment_knn.sav','rb'))
+iris_model = pickle.load( open('segment_knn.sav','rb'))
 def user_report():
     sepal_length = st.sidebar.slider('sepal length',1.0,10.0,0.1)
     sepal_width = st.sidebar.slider('sepal width',1.0,10.0,0.1)
